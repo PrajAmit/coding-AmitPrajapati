@@ -2,17 +2,17 @@ package com.amit.energy.dto;
 
 public class CounterDTO {
 
-	private String counterId;
+	private long counterId;
 	
     private double amount;
     
     private VillageDTO village;
 
-    public String getCounterId() {
+    public long getCounterId() {
         return counterId;
     }
 
-    public void setCounterId(String counterId) {
+    public void setCounterId(long counterId) {
         this.counterId = counterId;
     }
 

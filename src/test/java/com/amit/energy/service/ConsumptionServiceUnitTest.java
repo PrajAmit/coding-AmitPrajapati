@@ -6,17 +6,14 @@ import static org.mockito.Mockito.when;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnitRunner;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.amit.energy.dto.VillageConsumptionDTO;
 import com.amit.energy.repository.ConsumptionRepository;
 
-@RunWith(MockitoJUnitRunner.class)
 @SpringBootTest
 public class ConsumptionServiceUnitTest {
 

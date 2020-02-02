@@ -22,7 +22,7 @@ public class CounterService {
 	
 	public void processCounterConsumption(CounterDTO counterDto) {
 		RestTemplate restTemplate = new RestTemplate();
-		Map<String, String> params = new HashMap<String, String>();
+		Map<String, Long> params = new HashMap<>();
 		params.put("id", counterDto.getCounterId());
 		CounterDTO counterResponse = restTemplate.getForObject(URL, CounterDTO.class, params);
 		
