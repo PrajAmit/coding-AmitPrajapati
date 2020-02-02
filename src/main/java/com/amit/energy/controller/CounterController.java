@@ -17,7 +17,6 @@ public class CounterController {
 
 	@RequestMapping(value = "/counter_callback", method = RequestMethod.POST)
 	public void uploadCounterConsumption(@RequestBody CounterDTO counterDto) {
-		System.out.println("Im here!");
 		counterService.processCounterConsumption(counterDto);
 	}
 	

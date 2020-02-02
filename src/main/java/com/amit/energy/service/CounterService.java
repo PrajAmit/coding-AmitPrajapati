@@ -25,7 +25,6 @@ public class CounterService {
 		Map<String, String> params = new HashMap<String, String>();
 		params.put("id", counterDto.getCounterId());
 		CounterDTO counterResponse = restTemplate.getForObject(URL, CounterDTO.class, params);
-		System.out.println(counterResponse);
 		
 		VillageConsumption consumptionEntity = new VillageConsumption(counterResponse.getVillage().getName(), counterDto.getAmount(), new Date());
 		consumptionRepository.save(consumptionEntity);
